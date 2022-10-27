@@ -9,13 +9,46 @@ body {
 }
 
 /* HEADER */
+header {
+    font-size: 0.7em;
+    background: rgb(1, 137, 170);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 3px 3px rgb(66, 66, 66);
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+}
 
+img {
+    max-width: 60%;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+nav {
+    padding-top: 1em;
+}
+
+header nav li a:hover {
+    color: rgb(221, 0, 255);
+}
 
 /* MAIN */
-
+main, aside {
+    background-color: white;
+    box-shadow: 0 3px 3px rgb(66, 66, 66);
+    padding: 1.2em;
+}
 
 /* ELEMENTI NEL MAIN - ARTICLE */
-
+h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+p, address, ul, ol, dl, blockquote {
+    margin-bottom: 1.2em;
 
 /* TABELLE */
 
