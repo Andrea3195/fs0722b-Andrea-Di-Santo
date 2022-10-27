@@ -21,14 +21,14 @@ header {
     padding-bottom: 1.5em;
 }
 
+header ul {
+    list-style: none;
+}
+
 img {
     max-width: 60%;
     padding-top: 1.5em;
-    padding-bottom: 1em;
-}
-
-nav {
-    padding-top: 1em;
+    padding-bottom: 1.5em;
 }
 
 header nav li a:hover {
@@ -46,9 +46,32 @@ main, aside {
 h1 {
     font-size: 1.5em;
     font-weight: bold;
+    margin-bottom: 1em;
 }
+
+h2, h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
 p, address, ul, ol, dl, blockquote {
     margin-bottom: 1.2em;
+}
+
+#gray {
+    color: rgb(190, 185, 185);
+}
+
+code {
+    background-color: #d5d1d1;
+    border: 1px solid #838383;
+    border-radius: 5px;
+}
+
+ul {
+    margin-left: 1em;
+}
 
 /* TABELLE */
 
