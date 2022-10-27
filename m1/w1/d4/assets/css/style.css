@@ -31,6 +31,11 @@ img {
     padding-bottom: 1.5em;
 }
 
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+
 header nav li a:hover {
     color: rgb(221, 0, 255);
 }
@@ -49,9 +54,17 @@ h1 {
     margin-bottom: 1em;
 }
 
-h2, h3 {
+h2 {
     font-size: 1.2em;
     font-weight: bold;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
     margin-bottom: 1em;
 }
 
@@ -59,13 +72,18 @@ p, address, ul, ol, dl, blockquote {
     margin-bottom: 1.2em;
 }
 
-#gray {
+b {
+    color: rgb(178, 21, 118);
+    font-weight: bold;
+}
+
+#clear {
     color: rgb(190, 185, 185);
 }
 
 code {
-    background-color: #d5d1d1;
-    border: 1px solid #838383;
+    background-color: rgb(229, 229, 229);
+    border: 2px solid rgb(177, 177, 177);
     border-radius: 5px;
 }
 
@@ -73,13 +91,90 @@ ul {
     margin-left: 1em;
 }
 
-/* TABELLE */
+iframe {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1em;
+    border-radius: 20px;
+}
 
+/* TABELLE */
+table {
+    margin-bottom: 2em;
+}
+caption {
+    font-weight: bold;
+    font-style: italic;
+}
+thead tr {
+    background-color: rgb(52, 99, 201);
+    color: rgba(255, 255, 255, 0.973);
+}
+th, td {
+    padding: 12px 15px;
+    vertical-align: bottom;
+    text-align: center;
+}
+tbody tr {
+    border-bottom: 1px solid rgba(221, 221, 221, 0.631);
+}
+
+.gray {
+    background-color: rgb(210, 210, 213);
+}
 
 /* FORM */
-
+input {
+    padding: 4px;
+    border: none;
+    border-bottom: 1px dashed rgb(69, 68, 68);
+}
+button {
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    background-color: rgb(56, 102, 201);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
 
 /* ELEMENTI NELL' ASIDE */
+#box, aside div {
+    background-color: rgb(227, 227, 227);
+    border: 1px solid rgb(195, 195, 195);
+    margin-bottom: 1em;
+    padding: 1em;
+}
 
+div a {
+    color: rgb(21, 167, 220);
+}
+
+div a:hover {
+    color: rgb(221, 0, 255);
+}
+
+.side {
+    font-size: 0.8em;
+    text-align: right;
+}
 
 /* FOOTER */
+footer {
+    background: rgb(1, 99, 123);
+    box-shadow: 0 3px 3px #444;
+    color: rgb(234, 231, 231);
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+}
+footer a {
+    color: rgb(242, 10, 242);
+}
+
+footer a:hover {
+    color: rgb(235, 22, 157);
+}
