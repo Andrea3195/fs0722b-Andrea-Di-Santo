@@ -1,1 +1,100 @@
-/* Your styles here */
+/* IMPOSTAZIONI GENERALI */
+body {
+	color: #393d41;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.2em;
+	line-height: 1.65;
+	text-align: center;
+}
+
+/* HEADER */
+header {
+	background-color: black;
+	padding: 1.5em;
+}
+
+header img {
+    display: inline-block;
+    width: 35%;
+    height: auto;
+}
+
+/* MAIN */
+h1, h3 {
+	color: #25a2c3;
+	font-family: "Montserrat", sans-serif;
+	line-height: 1.5;
+	margin-bottom: 0.5em;
+}
+
+h2 {
+    color: white;
+	font-family: "Montserrat", sans-serif;
+    font-size: 1.8em;
+	line-height: 1.5;
+	margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+/* SECTION */
+section {
+	padding-top: 3em;
+    padding-right: 1.2em;
+    padding-bottom: 2em;
+}
+
+#background {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#background h1 {
+    font-size: 1.8em;
+    line-height: 1;
+}
+
+#background p {
+    margin-bottom: 1.6em;
+}
+
+#background a {
+    font-size: 0.7em;
+    background-color: #f04c2f;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding: 1em 2em;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#notebook {
+    border-radius: 50%;
+    margin-bottom: 1.5em;
+}
+
+#red {
+    background-color: #e22d0e;
+    color: white;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 0.8em;
+    margin: 1.7em;
+}
+
+cite {
+    font-size: 1em;
+}
+
+#small {
+    font-size: 0.8em;
+}
