@@ -1,12 +1,18 @@
 body {
     background-color: rgb(233, 126, 81);
     color: rgb(245, 228, 228);
+    font-size: 1.3em;
     padding-top: 1.5em;
     padding-left: 3em;
 }
 
+main img {
+    margin-top: 2em;
+}
+
 a {
     color: rgb(194, 2, 18);
+    font-size: 0.9em;
     text-decoration: none;
 }
 
