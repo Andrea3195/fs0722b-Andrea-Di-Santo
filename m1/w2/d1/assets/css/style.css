@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(233, 126, 81);
+    color: rgb(245, 228, 228);
+    padding-top: 1.5em;
+    padding-left: 3em;
+}
+
+a {
+    color: rgb(194, 2, 18);
+    text-decoration: none;
+}
+
