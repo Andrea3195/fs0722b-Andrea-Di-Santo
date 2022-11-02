@@ -13,7 +13,7 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-
+// I datatypes in Javascript sono i valori che descrivono la tipologia di variabile alla quale sono collegati. I principali sono: stringhe (contenenti testo), numeri (contenenti numeri), booleani (contenenti esclusivamente i valori "vero" o "falso"), array (contenenti una lista di elementi), null (con valori nulli), undefined (la cui variabile associata non è stata ancora inizializzata).
 
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
@@ -21,7 +21,7 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-
+var name = 'Andrea'
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
@@ -29,7 +29,10 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+var numero1 = 1
+var numero2 = 2
 
+console.log(numero1 + numero2)
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
@@ -37,7 +40,7 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-
+var x = 12
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
@@ -54,7 +57,10 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+var x = 12
+var y = 4
 
+console.log(x - y)
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
@@ -64,4 +70,7 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+var name1 = 'john'
+var name2 = 'John'
 
+console.log(name1 == name2)
