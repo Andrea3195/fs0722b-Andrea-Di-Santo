@@ -29,10 +29,10 @@ var name = 'Andrea'
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-var numero1 = 1
-var numero2 = 2
+var a = 1
+var b = 2
 
-console.log(numero1 + numero2)
+console.log(a + b)
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
@@ -42,6 +42,8 @@ console.log(numero1 + numero2)
 
 var x = 12
 
+console.log(x)
+
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
@@ -49,7 +51,14 @@ var x = 12
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+var c = 'Di Santo'
 
+console.log(c)
+
+const d = 'Andrea'
+d = 'Di Santo'
+
+console.log(d)
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
