@@ -102,7 +102,7 @@ const starWarsCharacters = [
 ];
 
 /* ESERCIZIO 1
-Crea una variabile chiamata "characters" e inserisci un array vuoto
+Crea una variabile chiamata "characters" e inserisci un array vuoto.
 */
 
 var characters = []
@@ -124,28 +124,28 @@ Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO",
 
 /* ESERCIZIO 4
   Crea un oggetto "eyeColor" che abbia come proprietà: blue, yellow, brown, red, blue-gray.
-  ognuna di queste proprietà contiene un array vuoto
+  Ognuna di queste proprietà contiene un array vuoto.
 */
 
 
 
 /* ESERCIZIO 5
-  Inserisci l'oggetto dei personaggi in "starWarsCharacters" nell'array corrispondente al colore dei loro occhi nell'oggetto "eyeColor" precedentemente creato
-  Utilizza uno switch statement per determinare in quale proprietà inserire il personaggio
+  Inserisci l'oggetto dei personaggi in "starWarsCharacters" nell'array corrispondente al colore dei loro occhi nell'oggetto "eyeColor" precedentemente creato.
+  Utilizza uno switch statement per determinare in quale proprietà inserire il personaggio.
 */
 
 
 
 /* ESERCIZIO 6
-  Usa un while loop per calcolare la massa totale dell'equipaggio
+  Usa un while loop per calcolare la massa totale dell'equipaggio.
 */
 
 
 
 /* ESERCIZIO 7
 
-Crea uno switch statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'impotetica astronave contenente i personaggi dell'array "starWarsCharacters"
-(cerca su un motore di ricerca switch case e conditionals)
+Crea uno switch statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'impotetica astronave contenente i personaggi dell'array "starWarsCharacters".
+(Cerca su un motore di ricerca switch case e conditionals)
 
 Se la massa è inferiore a 500 stampa in console: "Ship is under loaded",
 Se la massa è uguale a 500 stampa in console: "Ship is half loaded",
@@ -166,17 +166,17 @@ Usa un for loop per cambiare il valore della proprietà "gender" di alcuni perso
 
 /* EXTRA ESERCIZIO 9
 
-Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome"
-Usa uno più for loop per raggiungere il risultato
+Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "characters" le stringhe corrispondenti a personaggi con lo stesso nome".
+Usa uno più for loop per raggiungere il risultato.
 
 (tip: cerca un metodo degli array per rimuovere un elemento)
 
-Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione
+Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione.
 */
 
 
 
 /* EXTRA ESERCIZIO 10
-Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
+Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo.
 */
 
