@@ -204,7 +204,10 @@ console.log(me)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+var a = []
 
+var a = new Array(1,2,3,4,5,6,7,8,9,10)
+console.log(a)
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
@@ -212,4 +215,6 @@ console.log(me)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-
+a.pop(10)
+a.push(100)
+console.log(a)
