@@ -206,7 +206,7 @@ console.log(me)
 
 var a = []
 
-var a = new Array(1,2,3,4,5,6,7,8,9,10)
+var a = [1,2,3,4,5,6,7,8,9,10]
 console.log(a)
 
 /* ESERCIZIO 15
@@ -215,6 +215,12 @@ console.log(a)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+var a = [1,2,3,4,5,6,7,8,9,10]
+
 a.pop(10)
+console.log(a)
+
+var a = [1,2,3,4,5,6,7,8,9]
+
 a.push(100)
 console.log(a)
