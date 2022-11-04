@@ -1,7 +1,7 @@
 // Funzioni
 
-function pressButton(dato){
-   document.getElementById("display").value += dato.textContent
+function pressButton(dati){
+   document.getElementById("display").value += dati.textContent
  }
 
 function clearDisplay() {
