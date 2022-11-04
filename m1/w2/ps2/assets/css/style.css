@@ -1,3 +1,5 @@
+/* Struttura Calcolatrice */
+
 #calculator {
     background-color: #4284e0;
     border-radius: 50px;
@@ -7,6 +9,8 @@
     margin: 5em auto;
     padding: 1em;
 }
+
+/* Visualizzazione Display */
 
 #display {
     background-color: rgb(173, 212, 246);
@@ -22,6 +26,8 @@
     margin: 1.2em auto;
     padding: 0.2em;
 }
+
+/* Visualizzazione Pulsanti */
 
 #commands {
     display: inline-block;
