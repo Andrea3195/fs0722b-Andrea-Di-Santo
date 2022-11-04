@@ -1,5 +1,4 @@
 /* Struttura Calcolatrice */
-
 #calculator {
     background-color: #4284e0;
     border-radius: 50px;
@@ -11,7 +10,6 @@
 }
 
 /* Visualizzazione Display */
-
 #display {
     background-color: rgb(173, 212, 246);
     box-shadow: 1px 1.8px rgb(39, 38, 38);
@@ -28,7 +26,6 @@
 }
 
 /* Visualizzazione Pulsanti */
-
 #commands {
     display: inline-block;
     margin: 0.2em 2.4em;
