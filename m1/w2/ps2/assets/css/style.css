@@ -32,7 +32,7 @@
 }
 
 .buttons {
-    background-color: rgb(245, 81, 81);
+    background-color: rgb(250, 76, 76);
     box-shadow: 1px 1.8px rgb(39, 38, 38);
     border-radius: 15px;
     color: white;
@@ -43,8 +43,22 @@
     width: 60px;
     margin: 0.2em;
     padding: 0.3em;
+    cursor:pointer;
 }
 
-#AC, #CE {
-    background-color: rgb(249, 57, 204);
+.buttons:active{
+    transform: scale(0.9);
+}
+
+#divide, #multiply, #minus, #plus {
+    background-color: rgb(255, 147, 58);
+}
+
+#AC {
+    background-color: rgb(254, 52, 207);
+}
+
+#equal {
+    background-color: rgb(255, 147, 58);
+    width: 285px;
 }

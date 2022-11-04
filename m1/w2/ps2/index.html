@@ -14,26 +14,23 @@
     <div id="calculator">
         <input id="display" type="text">
         <div id="commands">
+            <button class="buttons" onclick="pressButton(this)">7</button>
+            <button class="buttons" onclick="pressButton(this)">8</button>
+            <button class="buttons" onclick="pressButton(this)">9</button>
+            <button class="buttons" id="divide" onclick="pressButton(this)">/</button>
+            <button class="buttons" onclick="pressButton(this)">4</button>
+            <button class="buttons" onclick="pressButton(this)">5</button>
+            <button class="buttons" onclick="pressButton(this)">6</button>
+            <button class="buttons" id="multiply" onclick="pressButton(this)">*</button>
+            <button class="buttons" onclick="pressButton(this)">1</button>
+            <button class="buttons" onclick="pressButton(this)">2</button>
+            <button class="buttons" onclick="pressButton(this)">3</button>
+            <button class="buttons" id="minus" onclick="pressButton(this)">-</button>
             <button class="buttons" id="AC" onclick="clearDisplay(this)">AC</button>
-            <button class="buttons" id="CE" onclick="deleteLastDigit(this)">CE</button>
-            <button class="buttons" id="%" onclick="percent(this)">%</button>
-            <button class="buttons" id="/" onclick="pressButton(this)">/</button>
-            <button class="buttons" id="7" onclick="pressButton(this)">7</button>
-            <button class="buttons" id="8" onclick="pressButton(this)">8</button>
-            <button class="buttons" id="9" onclick="pressButton(this)">9</button>
-            <button class="buttons" id="*" onclick="pressButton(this)">*</button>
-            <button class="buttons" id="4" onclick="pressButton(this)">4</button>
-            <button class="buttons" id="5" onclick="pressButton(this)">5</button>
-            <button class="buttons" id="6" onclick="pressButton(this)">6</button>
-            <button class="buttons" id="-" onclick="pressButton(this)">-</button>
-            <button class="buttons" id="1" onclick="pressButton(this)">1</button>
-            <button class="buttons" id="2" onclick="pressButton(this)">2</button>
-            <button class="buttons" id="3" onclick="pressButton(this)">3</button>
-            <button class="buttons" id="+" onclick="pressButton(this)">+</button>
-            <button class="buttons" id="0" onclick="pressButton(this)">0</button>
-            <button class="buttons" id="00" onclick="pressButton(this)">00</button>
-            <button class="buttons" id="." onclick="pressButton(this)">.</button>
-            <button class="buttons" id="=" onclick="equals()">=</button>
+            <button class="buttons" onclick="pressButton(this)">0</button>
+            <button class="buttons" onclick="pressButton(this)">.</button>
+            <button class="buttons" id="plus" onclick="pressButton(this)">+</button>
+            <button class="buttons" id="equal" onclick="equal()">=</button>
         </div>
     </div>
 
