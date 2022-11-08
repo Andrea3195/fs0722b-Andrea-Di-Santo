@@ -55,9 +55,9 @@ console.log(arr2)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici.
  */
 
-const findEvenNumbers = function (arr) {
+const findEvenNumbers = function (arr){
   let evenArray = []
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++){
     if (arr[i] % 2 === 0) {
       evenArray.push(arr[i])
     }
@@ -72,13 +72,25 @@ findEvenNumbers(array)
   Scrivi una funzione per sommare a catena i numeri contenuti in un array.
  */
 
+function add (array){
+  var som = 0
 
+  for (let i = 0; i < arr.length; i++){
+    som += array[i]
+  }
+  return (som)
+}
 
 /* ESERCIZIO 7
   Scrivi una funzione per incrementare di 1 tutti i valori numerici in un array.
 */
 
-
+function incrementaArray (arrayDaIncrementare){
+  for (let i = 0; i < arrayDaIncrementare.lenght; i++){
+    arrayDaIncrementare[i]++
+  }
+  return arrayDaIncrementare
+}
 
 /* ESERCIZIO 8
   Sostituisci ogni stringa contenuta in un array con un numero rappresentante la sua lunghezza.
@@ -87,7 +99,7 @@ findEvenNumbers(array)
 
 let animali = ["Adinolfi", "Berlu", "Salvini"]
 
-function strToNumArray(array) {
+function strToNumArray (array){
   let s = [];
   for (let u of array) {
     s.push(u.length)
@@ -101,35 +113,56 @@ console.log(strToNumArray(animali))
   Scrivi una funzione per eliminare solo i valori PARI da un array.
 */
 
+const deleteEven = function(arr){
+  let counter = 0
 
+  while (counter !== arr.length){
+    if (arr [counter] % 2 === 0){
+      arr.splice(counter, 1)
+    }
+    else{
+      counter ++
+    }
+  }
+}
+
+console.log(arr)
 
 /* ESERCIZIO 10 (EXTRA)
   Scrivi una funzione per creare un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 10 (incluso), SENZA AMMETTERE DUPLICATI.
  */
 
-const createRandomWithoutDuplicate = function (){        // Dichiarazione funzione
-  let array = []                                         // Dichiarato array vuoto
-  for (let i = 0; i < 10; i++){                          // Ciclo FOR per scorrere elemento per elemento (10)
-    let added = false                                    // Per rimanere nel ciclo WHILE nel caso l'IF venga specificato
-    while (!added) {                                     // Condizione per il WHILE che fa ripetere il ciclo finché non viene inserito un elemento
-      let numberToAdd = Math.ceil(Math.random() *10)     // In questo passaggio viene inserita una variabile random tra 1 e 10
-      if (!array.includes(numberToAdd)){                 // Va a controllare se nell'array non è presente il numero appena messo nella variabile "numberToAdd"
-        array.push(numberToAdd)                          // Se non è presente va ad eseguire un .push() del numero generato
-        added = true                                     // In questo modo esce dal ciclo quando un elemento viene aggiunto all'array e ripete il ciclo FOR
-      }
+function arrayRandom (){                               // Creo la funzione arrayRandom che non richiede parametri in ingresso
+
+  let array = []                                       // Creo un array vuoto chiamato array
+  let numeroRandom                                     // Creo la variabile numeroRandom in cui verrà valorizzato un numero random (più avanti nel codice)
+  let i = 0                                            // Creo l'indice i utile per il ciclo WHILE
+  while (i <= 10){                                     // Apro il ciclo WHILE e faccio ciclare finché l'indice non sarà superiore a 10 (in questo caso quindi, una volta chiuso il ciclo, creerà un array di 10 elementi)
+    numeroRandom = Math.floor(Math.random() * 10)      // Alla variabile numeroRandom affido un numero random da 0 a 10 (inculso)
+    if(!array.includes (numeroRandom)){                // Avvio un IF dove dirò "se in tutto l'array non esiste il valore presente nella variabile numeroRandom, allora verifica la condizione interna"
+      array.push(numeroRandom)                         // Così facendo, se la condizione sarà verificata nell'IF, pusho nel nostro array la variabile numeroRandom
+      i++                                              // Aumento il contatore del WHILE (in questo caso solo se la condizione dell'IF sarà verificata)
     }
+    return array                                       // Ritorno all'array
   }
-  return array
 }
 
-console.log(createRandomWithoutDuplicate())
+let array1 = arrayRandom()
+
+console.log(array1)
 
 /* ESERCIZIO 11 (EXTRA)
   Scrivi un algoritmo in grado di invertire un array.
   es: [1, 3, 5] ==> [5, 3, 1]
 */
 
+let arr3 = [1,3,5]
 
+function inversione(arr3){
+  return arr3.reverse()
+}
+
+ console.log(inversione(arr3))
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
