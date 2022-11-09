@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(214, 175, 250);
+    text-align: center;
+    margin: 6em auto;
+}
+
+h1 { 
+    color: rgb(137, 32, 116);
+    font-size: 2.3em;
+    text-decoration: underline;
+}
+
+#text {
+    background-color: rgb(255, 209, 235);
+    color: rgb(253, 138, 203);
+    font-size: 1.6em;
+    margin-top: 0.8em;
+    border: none;
+    border-radius: 7px;
+    padding: 0.6em 9em 0.6em 0.6em;
+}
+
+#text::placeholder {
+    color: rgb(253, 138, 203);
+}
+
+#button {
+    background-color: rgb(226, 43, 189);
+    color: rgb(116, 0, 93);
+    font-size: 1.5em;
+    margin-left: -5em;
+    border: none;
+    border-radius: 7px;
+    padding: 0.3em;
+    cursor: pointer;
+}
+
+#button:hover {
+    color: rgb(253, 138, 203);
+}
