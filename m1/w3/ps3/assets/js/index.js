@@ -434,7 +434,7 @@ const onlyInLastMillennium = function (array){
       arr.push(film)
     }
   }
-  return array
+  return arr
   }
 
 console.log(onlyInLastMillennium(movies))
