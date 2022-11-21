@@ -1,11 +1,11 @@
 /* IMPOSTAZIONI GENERALI */
 body {
     font-style: Poppins, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 1.5;
     padding: 13px;
     background-image: url(../img/sfondo.png);
-    background-position: center;
+    background-position: center; 
 }
 
 /* HEADER */
