@@ -245,9 +245,9 @@ footer a {
     }
 
     iframe {
-       height: 16em;
-       margin-bottom: 2.5em;
-    } 
+        height: 16em;
+        margin-bottom: 2.5em;
+    }
 
     input, button {
         font-size: 0.9em;
@@ -268,15 +268,33 @@ footer a {
         margin: 4.8em 0 4.8em 12.2em;
     }
 
-    iframe {
-        width: 38em;
-        height: 22em;
-        margin-left: 8.8em;
+    iframe, section {
+    display: inline-block;
+    height: 13em;
+    width: 50%;
+    margin: 1.3em -0.2em 1.8em;
+    vertical-align: middle;
+    }
+
+    section {
+        border-radius: 20px;
+        margin-left: 0.3em;
+    }
+
+    aside div {
+        display: inline-block;
+        width: 33.3%;
+        margin-inline: -0.1em;
     }
 }
 
 @media print {
-    header, footer, section, aside, iframe {
+
+    header,
+    footer,
+    section,
+    aside,
+    iframe {
         display: none;
     }
 
