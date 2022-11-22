@@ -22,6 +22,9 @@ header {
     box-shadow: 0 3px 3px #444;
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 header div img {
     margin-bottom: 20px;
@@ -54,6 +57,7 @@ section {
     background-color: #e3e3e3;
     padding: 1em;
     margin-bottom: 2em;
+    position: relative;
 }
 section h2 {
     text-align: center;
@@ -62,6 +66,18 @@ section h2 {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1em;
+    position: absolute;
+    top: -0.7em;
+    left: 1.2em;
+    height: 40px;
+    width: 115px;
+    background-color: #b9b9b9;
+    box-shadow: 1.5px 1.5px #585858;
+    padding: 0.3em 0.5em 0.5em 0.5em;
+}
+
+section p {
+    margin-top: 2.5em;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -77,12 +93,21 @@ p, address, ul, ol, dl, blockquote {
 h1 + p {
     color: #a0a0a0;
 }
-article img {
+#line{
+    position: relative;
+    top: -1.9em;
+    left: -0.3em;
+    width: 240px;
+    opacity: 0.5;
+}
+#logo {
+    float: left;
     height: 75px;
-    width: 95px;
+    width: 75px;
     border: 4px solid #00A0C6;
     outline: 4px solid #a02571;
     margin-left: 0.3em;
+    margin-right: 0.5em;
 }
 ul, ol {
     margin-left: 2em;
@@ -171,7 +196,6 @@ aside div p:last-child {
     text-align: right;
 }
 
-
 /* FOOTER */
 footer {
     background: rgb(53,53,53);
@@ -186,11 +210,49 @@ footer a {
     color: fuchsia;
 }
 
+/* BUTTONS */
+#social {
+    position: fixed;
+    bottom: 90px;
+    right: 1px;
+}
+#calendar {
+    position: fixed;
+    bottom: 50px;
+    right: 1px;
+}
+#top {
+    position: fixed;
+    bottom: 10px;
+    right: 1px;
+}
+#top a {
+    color: #c76d9a;
+    font-size: 2.5em;
+    display: block;
+}
+#social a, #calendar a {
+    color: #275eb0;
+    font-size: 2.5em;
+    display: block;
+}
+#social, #calendar, #top {
+    background-color: transparent;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width:480px) {
     body {
         font-size: 1.4em;
         line-height: 1.5em;
+    }
+
+    #line{
+        position: relative;
+        top: -1.5em;
+        left: -0.3em;
+        width: 400px;
+        opacity: 0.5;
     }
 
     table {
@@ -200,32 +262,21 @@ footer a {
     aside {
         padding-right: 10px;
     }
-}
 
-@media screen and (min-width:576px) {
-    body {
-        font-size: 1.6em;
+    section h2 {
+        padding-top: 0.5em;
     }
 
-    h1 {
-        text-align: center;
+    #social {
+        bottom: 105px;
     }
 
-    p {
-        margin-top: 5px;
-        margin-bottom: 20px;
+    #calendar {
+        bottom: 60px;
     }
 
-    table {
-        margin: 3.3em 0 3.3em 4.4em;
-    }
-
-    iframe {
-        height: 15em;
-    }
-
-    footer {
-        font-size: 0.9em;
+    #top {
+        bottom: 15px;
     }
 }
 
@@ -239,6 +290,18 @@ footer a {
         margin-bottom: 25px;
     }
 
+    article h1 {
+        font-size: 1.8em;
+    }
+
+    #line{
+        position: relative;
+        top: -2.7em;
+        width: 570px;
+        padding-top: 1.5em;
+        opacity: 0.5;
+    }
+
     table {
         width: 26em;
         margin: 5em 0 5em 6.5em;
@@ -249,18 +312,77 @@ footer a {
         margin-bottom: 2.5em;
     }
 
+    section h2 {
+        font-size: 1.2em;
+        height: 45px;
+        width: 120px;
+    }
+
     input, button {
         font-size: 0.9em;
+    }
+
+    #social {
+        top: 15px;
+        z-index: 2;
+    }
+
+    #calendar {
+        top: 75px;
+        z-index: 2;
+    }
+
+    #top {
+        bottom: 15px;
     }
 }
 
 @media screen and (min-width:1200px) {
     body {
         font-size: 2em;
+        margin-left: 4em;
+        margin-right: 4em;
     }
 
     p {
         margin-bottom: 33px;
+    }
+
+    header {
+        text-align: left;
+        padding: 1em;
+    }
+
+    header nav, header nav li {
+        display: inline-block;
+    }
+    
+    header div {
+        display: inline-block;
+        width: 75%;
+    }
+
+    header div img {
+        vertical-align: middle;
+        margin: 0 0.8em 0 -1em;
+    }
+
+    header div p {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    article h1 {
+        font-size: 2.2em;
+    }
+
+    #line{
+        position: relative;
+        top: -3em;
+        left: 14em;
+        width: 475px;
+        padding-top: 1.5em;
+        opacity: 0.5;
     }
 
     table {
@@ -269,11 +391,11 @@ footer a {
     }
 
     iframe, section {
-    display: inline-block;
-    height: 13em;
-    width: 50%;
-    margin: 1.3em -0.2em 1.8em;
-    vertical-align: middle;
+        display: inline-block;
+        height: 13em;
+        width: 50%;
+        margin: 1.3em -0.2em 1.8em;
+        vertical-align: middle;
     }
 
     section {
@@ -281,20 +403,32 @@ footer a {
         margin-left: 0.3em;
     }
 
+    section h2 {
+        font-size: 1.3em;
+        height: 55px;
+        width: 128px;
+    }
+
     aside div {
         display: inline-block;
         width: 33.3%;
         margin-inline: -0.1em;
     }
+    
+    #social {
+        right: 5px;
+    }
+    #calendar {
+        top: 80px;
+        right: 5px;
+    }
+    #top {
+        right: 5px;
+    }
 }
 
 @media print {
-
-    header,
-    footer,
-    section,
-    aside,
-    iframe {
+    header, footer, section, aside, iframe {
         display: none;
     }
 
