@@ -53,7 +53,7 @@ nav .centralElement {
 
 nav img {
     flex: 1 0 60px;
-    height: 60px;
+    height: 50px;
 }
 
 nav .textElement {
@@ -63,11 +63,17 @@ nav .textElement {
 
 
 /*ARTICLE*/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card {
     background-color: #fbf7e3;
     max-width: 305px;
     border-radius: 100px;
-    margin-top: 15px;
+    margin: 15px;
 }
 
 .card img {
@@ -118,4 +124,14 @@ section {
 .text img {
     height: 100%;
     width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    h2 {
+        font-size: 1.8em;
+    }
+
+    nav .element {
+        flex: 1 1 auto;
+    }
 }
