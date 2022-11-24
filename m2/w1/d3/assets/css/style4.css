@@ -1,0 +1,121 @@
+/*FONT IMPORT*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/*GENERALI*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #612406;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/*NAV*/
+nav {
+    background-color: #fef7e2;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 305px;
+    padding: 20px;
+    border-radius: 100px; 
+}
+
+nav .element {
+    background-color: #ffdf7e;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 100px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 100px;
+}
+
+nav .centralElement {
+    background-color: #ffdf7e;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    flex: 2 0 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 20px 20px 20px 60px;
+    border-radius: 100px;
+}
+
+nav img {
+    flex: 1 0 60px;
+    height: 60px;
+}
+
+nav .textElement {
+    flex: 2 0 120px;
+    padding-left: 50px;
+}
+
+
+/*ARTICLE*/
+.card {
+    background-color: #fbf7e3;
+    max-width: 305px;
+    border-radius: 100px;
+    margin-top: 15px;
+}
+
+.card img {
+    width: 305px;
+    height: 250px;
+    border-radius: 100px 100px 0 0;
+}
+
+.card .description {
+    margin-bottom: 1.8em;
+}
+
+.description h4 {
+    font-size: 1.4em;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-left: 30px;
+}
+
+.description span {
+    font-size: 1.1em;
+    padding-left: 35px;
+    padding-right: 17px;
+}
+
+.card button {
+    background-color: #f3df85;
+    font-size: 1.2em;
+    padding: 10px;
+    border: 0;
+    border-radius: 50px;
+    margin: 0 0 25px 100px;
+}
+
+/*SECTION*/
+section {
+    background-color: #fef7e2;
+    border-radius: 15px;
+    min-width: 305px;
+}
+
+.text {
+    font-size: 1em;
+    text-align: justify;
+    padding: 10px 10px 5px 10px;
+}
+
+.text img {
+    height: 100%;
+    width: 100%;
+}
