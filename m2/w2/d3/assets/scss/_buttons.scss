@@ -1,0 +1,7 @@
+button {
+    padding: 30px;
+    color: $color1;
+    &:hover {
+        transform: scale(1.2);
+    }
+}

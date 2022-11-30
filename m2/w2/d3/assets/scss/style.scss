@@ -1,0 +1,59 @@
+@import 'variables';
+@import 'buttons';
+
+body {
+    background-color: $color;
+}
+
+.header1 {
+    nav {
+        display: flex;
+
+        justify-content: space-between;
+
+        p {
+            font-size: 50px;
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                padding: 50px;
+                color: $color1;
+                list-style: none;
+
+                &:hover {
+                    color: #ef8d34;
+                }
+            }
+        }
+    }
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    .text{
+        padding: 20px;
+    }
+   
+
+    #blue {
+        background-color: #316af6;
+    }
+
+    #orange {
+        background-color: #ef8d34;
+    }
+
+    img {
+        height: 300px;
+        width: 500px;
+    }
+    
+}

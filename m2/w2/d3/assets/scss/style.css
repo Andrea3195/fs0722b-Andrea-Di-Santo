@@ -1,0 +1,60 @@
+button {
+  padding: 30px;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+body {
+  background-color: #5b17bd;
+}
+
+.head nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head nav p {
+  font-size: 50px;
+}
+
+.head nav ul {
+  display: flex;
+}
+
+.head nav ul li {
+  padding: 50px;
+  color: white;
+  list-style: none;
+}
+
+.head nav ul li:hover {
+  color: #ef8d34;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.container .text {
+  padding: 20px;
+}
+
+.container #blue {
+  background-color: #316af6;
+}
+
+.container #orange {
+  background-color: #ef8d34;
+}
+
+.container img {
+  height: 300px;
+  width: 500px;
+}
+
+/*# sourceMappingURL=main.css.map */
