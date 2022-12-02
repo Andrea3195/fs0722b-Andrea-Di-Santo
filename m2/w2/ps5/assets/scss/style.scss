@@ -1,0 +1,93 @@
+@import 'variables';
+@import 'mixins';
+@import 'function';
+
+/*GENERALI*/
+h1, h2, p {
+    text-align: $position;
+    margin: 20px 10px 20px 10px;
+}
+
+/*NAVBAR*/
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    #navbarNavDropdown {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex: 1 0 10px;
+
+        .nav-link {
+            color: #ff0095;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    .nav-icons {
+        @extend #navbarNavDropdown;
+        list-style: none;
+        color: #ff0095;
+
+        li {
+            margin-left: 10px;
+        }
+    }
+}
+
+/*BUTTON*/
+#btn {
+    border: none;
+    border-radius: 15px;
+    margin-left: 150px;
+    padding: 10px;
+}
+
+/*SECTION*/
+.box1, .box2, .box3, .box4 {
+    margin-bottom: $margin;
+}
+
+.box1 {
+    background-image: url(/m2/w2/ps5/assets/img/pexels-aleksandar-pasaric-325185.jpg);
+    background-position: center;
+    height: 400px;
+}
+
+.box4 {
+    #carouselExampleSlidesOne {
+        margin-left: 575px;
+    }
+    
+    #carouselExampleSlidesTwo {
+        margin-left: 562px;
+    }
+    
+    img {
+        width: 13%;
+    }
+}
+
+/*SVG*/
+#svg1 {
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23f5f5f5' fill-opacity='1' d='M0 96L60 90.7C120 85 240 75 360 69.3C480 64 600 64 720 90.7C840 117 960 171 1080 170.7C1200 171 1320 117 1380 90.7L1440 64L1440 0L1380 0C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0L0 0Z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+#svg2 {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23f5f5f5' fill-opacity='1' d='M0 96L60 90.7C120 85 240 75 360 69.3C480 64 600 64 720 90.7C840 117 960 171 1080 170.7C1200 171 1320 117 1380 90.7L1440 64L1440 320L1380 320C1320 320 1200 320 1080 320C960 320 840 320 720 320C600 320 480 320 360 320C240 320 120 320 60 320L0 320Z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+/*FOOTER*/
+footer div {
+    padding: 10px 10px 0 0;
+}

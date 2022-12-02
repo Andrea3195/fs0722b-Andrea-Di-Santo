@@ -1,0 +1,12 @@
+@mixin baseNav($bgColor) {
+    text-transform: uppercase;
+    background: $bgColor;
+    box-shadow: 0 0 5px #ff7b00;
+    color: white;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.navbar {
+    @include baseNav(#030354);
+}

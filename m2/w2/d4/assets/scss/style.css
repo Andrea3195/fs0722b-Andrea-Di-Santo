@@ -1,0 +1,42 @@
+.navbar {
+  text-transform: uppercase;
+  background: #030354;
+  box-shadow: 0 0 5px #ff7b00;
+  color: white;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+ul li {
+  color: #fff;
+  padding-right: 50px;
+}
+
+main {
+  display: flex;
+}
+main .container {
+  width: 70%;
+  margin-left: 1.3em;
+}
+main .container #btn {
+  color: #fff;
+  background-color: #fb9c16;
+  box-shadow: 0 0 5px #414040;
+  padding: 7px 15px 7px 15px;
+  border-color: #5a5a5a;
+}
+main .box {
+  margin-top: 50px;
+}
+main .box div {
+  border-bottom: 1px solid gray;
+  border-bottom-style: dashed;
+  margin-left: 200px;
+  font-size: 1.2em;
+  padding: 10px 70px 10px 10px;
+}/*# sourceMappingURL=style.css.map */

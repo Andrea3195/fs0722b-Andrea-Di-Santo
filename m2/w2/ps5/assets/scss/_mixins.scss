@@ -1,0 +1,8 @@
+@mixin color($bgColor1){
+    background: $bgColor1;
+    color: white;
+}
+
+nav, #btn, footer {
+    @include color(#7428f2);
+}

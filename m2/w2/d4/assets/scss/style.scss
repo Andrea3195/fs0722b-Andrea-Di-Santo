@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'mixins';
+
+ul {
+    display: flex;
+    list-style: none;
+
+    li {
+        color: #fff;
+        padding-right: 50px;
+    }
+}
+
+main {
+    display: flex;
+
+    .container {
+        width: 70%;
+        margin-left: 1.3em;
+
+        #btn {
+            color: #fff;
+            background-color: #fb9c16;
+            box-shadow: 0 0 5px #414040;
+            padding: 7px 15px 7px 15px;
+            border-color: #5a5a5a;
+        }
+    }
+
+    .box {
+        margin-top: 50px;
+
+        div {
+            border-bottom: 1px solid gray;
+            border-bottom-style: dashed;
+            margin-left: 200px;
+            font-size: 1.2em;
+            padding: 10px 70px 10px 10px;
+        }
+    }
+}

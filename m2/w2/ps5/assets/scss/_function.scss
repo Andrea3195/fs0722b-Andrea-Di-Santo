@@ -1,0 +1,21 @@
+$layout: light;
+$bg-dark: #323232;
+$tc-dark: #fff;
+$bg-light: #fff;
+$tc-light: #323232;
+
+@mixin layouts {
+    @if $layout == light {
+        background-color: $bg-light;
+        color: $tc-light;
+    }
+
+    @if $layout == dark {
+        background-color: $bg-dark;
+        color: $tc-dark;
+    }
+}
+
+body {
+    @include layouts;
+}
