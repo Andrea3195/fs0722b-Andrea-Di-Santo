@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  position: absolute;
+  top: 80px;
+  left: 120px;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  background-color: #1b1b1b;
+  height: 375px;
+  width: 300px;
+  box-shadow: 0 0 0.8em #282828;
+  border-radius: 15px;
+  margin-left: -35px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-30px);
+  transition: 0.3s;
+}
+
+img {
+  position: absolute;
+  height: 55%;
+  width: 70%;
+  top: 25px;
+  left: 45px;
+}
+
+.text {
+  position: relative;
+  color: #fff;
+  top: 240px;
+  left: 30px;
+  margin-right: 60px;
+}
