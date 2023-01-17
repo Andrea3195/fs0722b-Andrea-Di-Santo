@@ -1,0 +1,53 @@
+<h1 class="text-center">Form Reactive Super Hero</h1>
+<div class="container w-25">
+  <div class="row">
+    <div class="col">
+      <form [formGroup]="form">
+        <div formGroupName="infoGenerali">
+          <div class="form-group">
+            <label for="nome">Name</label>
+            <input type="text" id="nome" class="form-control " formControlName="nome">
+            <p *ngIf="getFormC('infoGenerali.nome')?.invalid && getFormC('infoGenerali.nome')?.touched">
+              <ng-container *ngIf="getErrorsC('infoGenerali.nome','required')">Please, fill this form</ng-container>
+            </p>
+          </div>
+          <div class="form-group">
+            <label for="alterEgo">AlterEgo</label>
+            <input type="text" id="alterEgo" class="form-control " formControlName="alterEgo">
+            <p *ngIf="getFormC('infoGenerali.alterEgo')?.invalid && getFormC('infoGenerali.alterEgo')?.touched">
+              <ng-container *ngIf="getErrorsC('infoGenerali.alterEgo','required')">Please, fill this form</ng-container>
+            </p>
+          </div>
+          <div class="form-group" formArrayName="poteri">
+              <label for="poteri">Superpowers</label>
+              <button class="btn btn-primary m-3" type="button" id="poteri" (click)="addPoteri()">Add Superpower</button>
+              <div class="d-flex flex-column" *ngFor="let potere of getPoteriF() ; let i = index">
+              <input class="form-control" [formControlName]="i" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="nemico">Enemy</label>
+            <input type="text" id="nemico" class="form-control" formControlName="nemico">
+            <span *ngIf="getFormC('infoGenerali.nemico')?.invalid && getFormC('infoGenerali.nemico')?.touched">
+                <ng-container *ngIf="getErrorsC('infoGenerali.nemico','required')">Please, fill this form</ng-container>
+                <ng-container *ngIf="getErrorsC('infoGenerali.nemico','maxlength')">Lunghezza massima 10 caratteri</ng-container>
+            </span>
+          </div>
+          <div class="form-group">
+            <label for="pianeta">Planets</label>
+            <input type="text" id="pianeta" class="form-control" formControlName="pianeta">
+            <span *ngIf="getFormC('infoGenerali.pianeta')?.invalid && getFormC('infoGenerali.pianeta')?.touched">
+                <ng-container *ngIf="getErrorsC('infoGenerali.pianeta','required')">Please, fill this form</ng-container>
+                <ng-container *ngIf="getErrorsC('infoGenerali.pianeta','minlength')">Lunghezza minima 5 caratteri</ng-container>
+            </span>
+          </div>
+          <div class="form-group">
+            <label for="debolezze">Weaknesses</label>
+            <input type="text" id="debolezze" class="form-control" formControlName="debolezze">
+          </div>
+          <button type="submit" (click)="submit()" class="btn btn-danger mt-3">Enter</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
