@@ -81,8 +81,8 @@ public class Dipendente {
 		return this.Livello;
 	}
 
-	public static double calcolaPaga(Dipendente d) {
-		return d.getStipendio();
+	public static double calcolaPaga(Dipendente a) {
+		return a.getStipendio();
 	}
 
 	public static double calcolaPaga(Dipendente a, int oreStraordinario) {
